@@ -30,7 +30,11 @@
 
         <div class="text-center">
           <a href="/tables"
-            ><button type="button" class="btn btn-lg btn-primary">
+            ><button
+              type="button"
+              class="btn btn-lg btn-primary"
+              id="viewtables"
+            >
               <span class="glyphicon glyphicon-list-alt"></span> View Tables
             </button></a
           >
@@ -52,5 +56,12 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript">
+      $("#viewtables").on("click", function() {
+        $.get("api/tables", function(data) {
+          console.log(data);
+        });
+      });
+    </script>
   </body>
 </html>
