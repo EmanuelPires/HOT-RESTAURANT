@@ -1,0 +1,23 @@
+{
+  "name": "hot-restaurant",
+  "version": "1.0.0",
+  "description": "HOT RESTAURANT WEEK 13 ASSIGNMENT",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmanuelPires/HOT-RESTAURANT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmanuelPires/HOT-RESTAURANT/issues"
+  },
+  "homepage": "https://github.com/EmanuelPires/HOT-RESTAURANT#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
