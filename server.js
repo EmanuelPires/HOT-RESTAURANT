@@ -13,7 +13,7 @@ var viewtables = [
         Name: "Rachit",
         Phone_Number: "123-456-2345",
         Email: "Test@gmail.com",
-
+        Unique_ID: "Test101"
     }
 ];
 
@@ -21,7 +21,13 @@ app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "index.html"));
   });
 
-app  
+app.get("/api/viewtable", function(req,res){
+    res.sendFile(path.join(__dirname, "add.html"));
+})
+
+app.get("/api/reservation", function(req,res){
+    return res.json(viewtables);
+})
 
 
 
